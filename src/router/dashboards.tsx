@@ -10,6 +10,9 @@ const Loader = (Component) => (props) =>
     </Suspense>
   );
 
+
+const AddEmployee = Loader(lazy(() => import('src/content/pages/AddEmployee')));
+
 const Home = Loader(lazy(() => import('src/content/pages/Home')));
 const AssignHomework = Loader(
   lazy(() => import('src/content/pages/AssignHomework'))
@@ -47,6 +50,7 @@ const IndividualAttendance = Loader(
   lazy(() => import('src/content/pages/Attendance/IndividualAttendance'))
 );
 const ExamResult = Loader(lazy(() => import('src/content/pages/ExamResult')));
+
 
 const dashboardsRoutes = [
   {
@@ -129,8 +133,12 @@ const dashboardsRoutes = [
   {
     path: 'examresult',
     element: <ExamResult />
-  }
+  },
 
+  {
+    path: 'addemployee',
+    element: <AddEmployee />
+  }
 
 ];
 

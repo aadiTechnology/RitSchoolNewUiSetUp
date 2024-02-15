@@ -278,6 +278,13 @@ export const homeItems = {
         icon: MenuBookTwoTone,
         link: '/dashboard/examresult',
         color: blue[500]
+      },
+      {
+        id: 18,
+        title: 'AddEmployee',
+        icon: MenuBookTwoTone,
+        link: '/dashboard/addemployee',
+        color: blue[500]
       }
     ]
   }

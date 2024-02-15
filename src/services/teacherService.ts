@@ -28,3 +28,31 @@ export const getAllPrimaryClassTeachers = async (
     body
   );
 };
+
+export interface IStudentListDropDowntBody {
+  asStandard_Division_Id: number
+  asSchoolId: number
+  asAcademicYearId: number
+}
+
+export interface IStudentListDropDownResult {
+  Standard_Id: string
+  Division_Id: string
+  Student_Id: string
+  Student_Name: string
+  Academic_Year_Id: string
+  Roll_No: string
+  SchoolWise_Standard_Division_Id: string
+  SchoolLeft_Date: string
+  Joining_Date: string
+  Teacher_Id: string
+}
+
+export const getStudentListToAssignRemark = async (
+  body: IStudentListDropDowntBody
+) => {
+  return axiosInt.post<IStudentListDropDownResult[]>(
+    ServiceEndpoints.GET_STUDENT_LIST_ASSIGNREMARK,
+    body
+  );
+};
