@@ -9,5 +9,6 @@ export const ServiceEndpoints = {
 
   // Teacher services
   GET_ALL_PRIMARY_CLASS_TEACHERS: 'Teacher/GetAllPrimaryClassTeacherss',
-  GET_STUDENT_LIST_ASSIGNREMARK:'Teacher/GetStudentListToAssignRemark'
-};
+  GET_STUDENT_LIST_ASSIGNREMARK:'Teacher/GetStudentListToAssignRemark',
+  GET_TEACHER_SUBJECT_AND_CLASSSUBJECT:'Teacher/GetTeacherSubjectAndClassSubject'
+}

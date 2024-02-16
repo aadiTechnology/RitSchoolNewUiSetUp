@@ -56,3 +56,25 @@ export const getStudentListToAssignRemark = async (
     body
   );
 };
+
+export interface IGetTeacherSubjectAndClassSubjectBody {
+  asSchoolId: number;
+  aTeacherId: number;
+  asAcademicYearId: number;
+  asStandardDivisionId: number;
+}
+export interface IGetTeacherSubjectAndClassSubjectResult {
+  Standard_Id: string;
+  Standard_Name: string;
+  TeacherShortName: string;
+  Is_ClassTeacher: string;
+  Subject_Name: string;
+  Standard_Division_Id: string;
+  Teacher_Subject_Id: string;
+  Subject_Id: string;
+  Teacher_Id: string;
+  StandardDivision: string;
+  Teacher_Subject: string;
+  maxSubjectLecturesInWeek: string;
+  MySubject: string;
+}

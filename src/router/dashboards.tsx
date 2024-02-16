@@ -50,6 +50,8 @@ const IndividualAttendance = Loader(
   lazy(() => import('src/content/pages/Attendance/IndividualAttendance'))
 );
 const ExamResult = Loader(lazy(() => import('src/content/pages/ExamResult')));
+const EventManagement = Loader(lazy(() => import('src/content/pages/AnnualPlanner/EventManagement')));
+
 
 
 const dashboardsRoutes = [
@@ -76,6 +78,10 @@ const dashboardsRoutes = [
   {
     path: 'annual-planner',
     element: <AnnualPlanner />
+  },
+  {
+    path: 'event-management',
+    element: <EventManagement />
   },
   {
     path: 'assign-homework',
