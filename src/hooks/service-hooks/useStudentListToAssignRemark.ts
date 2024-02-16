@@ -10,7 +10,7 @@ export const useStudentListToAssignRemark = ({
 }: {
   body: IStudentListDropDowntBody;
 }) => {
-  const [student, setStudent] = useState<IStudentListDropDownResult[]>(null);
+  const [data, setSetdata] = useState<IStudentListDropDownResult[]>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState('');
 
@@ -19,7 +19,7 @@ export const useStudentListToAssignRemark = ({
 
     try {
       const response = await getStudentListToAssignRemark(body);
-      setStudent(response.data);
+      setSetdata(response.data);
       setIsLoading(false);
     } catch (err) {
       setIsError(err);
@@ -31,5 +31,5 @@ export const useStudentListToAssignRemark = ({
     fetchStudentData();
   }, []);
 
-  return { student, isLoading, isError, fetchStudentData };
+  return { data, isLoading, isError, fetchStudentData };
 };
