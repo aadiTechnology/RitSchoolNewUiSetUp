@@ -78,3 +78,11 @@ export interface IGetTeacherSubjectAndClassSubjectResult {
   maxSubjectLecturesInWeek: string;
   MySubject: string;
 }
+export const getTeacherSubjectAndClassSubject = async (
+  body: IGetTeacherSubjectAndClassSubjectBody
+) => {
+  return axiosInt.post<IGetTeacherSubjectAndClassSubjectResult[]>(
+    ServiceEndpoints.GET_TEACHER_SUBJECT_AND_CLASSSUBJECT,
+    body
+  );
+};

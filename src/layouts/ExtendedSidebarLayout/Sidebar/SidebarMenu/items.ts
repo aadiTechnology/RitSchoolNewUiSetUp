@@ -50,6 +50,11 @@ const menuItems: MenuItems[] = [
         name: 'Assign Exam Marks',
         icon: FeaturedPlayListTwoTone,
         link: '/dashboard/assign-exam-marks'
+      },
+      {
+        name: 'Event Management',
+        icon: FeaturedPlayListTwoTone,
+        link: '/dashboard/event-management'
       }
     ]
   }
